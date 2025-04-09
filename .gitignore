@@ -176,3 +176,7 @@ sam*.pth
 **/*.ipynb_aml_checkpoints*
 **/*amltmp
 avatar/video/.DS_Store
+guided-content-generation/static/images/*
+guided-content-generation/videos/generated/*
+guided-content-generation/images/*
+guided-content-generation/audio-track.mp3

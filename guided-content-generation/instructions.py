@@ -5,6 +5,7 @@ Revise the user prompt to create an optimal prompt for the {model} image generat
 Be creative and expand the prompt with visual details that help the image generation model create an interesting and very high quality image.
 This includes describing the subject, detailed imagery, emotions and atmosphere, shot composition and perspective, color palette, and action or activity and more.
 Limit the prompt to a maximum of five sentences.
+
 JUST RETURN THE REVISED PROMPT SO THAT IT CAN DIRECTLY BE PASSED TO THE IMAGE GEN MODEL
 For example, begin your prompt with {style}-style image of ...
 """

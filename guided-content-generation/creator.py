@@ -5,7 +5,7 @@ from streamlit import session_state as ss
 from dotenv import load_dotenv, find_dotenv
 
 # Load environment variables
-load_dotenv(find_dotenv())
+load_dotenv('.env', override=True)
 
 # Initialize session state for credentials
 if "credentials" not in ss:

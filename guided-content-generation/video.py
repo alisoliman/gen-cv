@@ -125,10 +125,14 @@ if transcribe_audio:
 # 4. Extract insights with LLM
 @st.cache_data(show_spinner="Extracting insights with LLM")
 def get_llm_insights(base64frames, transcription=None, system_message=None, max_retries=3, retry_delay=2):
-    llm_insights = video_analyzer.video_chat(
-        base64frames, transcription, system_message, max_retries, retry_delay
-    )
-    return llm_insights
+    insights = {}
+    for i in range(0, len(base64frames), 50):
+        frames_batch = base64frames[i:i + 50]
+        batch_insights = video_analyzer.video_chat(
+            frames_batch, transcription, system_message, max_retries, retry_delay
+        )
+        insights.update(batch_insights)
+    return insights
 
 frames_list = [entry['frame_base64'] for entry in ss.frames]
 

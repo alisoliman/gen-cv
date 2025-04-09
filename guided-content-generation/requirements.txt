@@ -1,8 +1,14 @@
 python-dotenv
 opencv-python
-openai
+openai>=1.6.0
 scenedetect
 imagehash
-moviepy
-streamlit
+moviepy==1.0.3
+fastapi>=0.104.0
+uvicorn>=0.23.2
+httpx>=0.25.0
+python-multipart
+pydantic-settings
+pillow
 replicate
+matplotlib
