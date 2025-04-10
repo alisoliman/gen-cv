@@ -10,22 +10,20 @@ dependencies = [
     "uvicorn>=0.27.0",
     "python-multipart>=0.0.9",
     "pydantic-settings>=2.2.0",
-    
     # Azure services
-    "openai>=1.60.0",  # For Azure OpenAI integration
-    
+    "openai>=1.60.0", # For Azure OpenAI integration
     # Image and video processing
     "imagehash>=4.3.1",
     "matplotlib>=3.10.0",
     "moviepy==1.0.3",
     "opencv-python>=4.11.0.86",
     "pillow>=10.2.0",
-    
     # Other dependencies
     "python-dotenv>=1.0.1",
     "replicate>=1.0.4",
     "scenedetect>=0.6.5.2",
     "numpy>=1.26.0",
+    "streamlit>=1.44.1",
 ]
 
 [project.optional-dependencies]
